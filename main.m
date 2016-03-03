@@ -11,4 +11,6 @@ Ytr=Ytr.data(:,2); %training labels
 %kernel scattering?
 
 
-%csvwrite('Yte.csv',Yte);
+%pour faire le fichier csv a partir de Yte, du meme format que Ytr
+headers={'Id','Prediction'};
+csvwrite_with_headers('Yte.csv',Yte,headers);
